@@ -13,19 +13,20 @@
             <h1 class="logo">My Portfolio</h1>
             <nav>
                 <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="intro">
+        <section id="about" class="intro">
             <div class="container">
                 <h2>I'm Janani N,</h2>
                 <h3>IT Student at Sri Krishna College of Technology</h3>
+                <p>I am an enthusiastic IT student with a passion for technology and software development. At Sri Krishna College of Technology, I have honed my skills in various programming languages and frameworks. My goal is to contribute to innovative projects and collaborate with like-minded professionals in the tech industry.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     <a href="#"><i class="fas fa-envelope"></i> Email</a>
@@ -33,17 +34,37 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        
+        <section id="projects" class="projects">
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="project">
                     <h3>Travel Website</h3>
-                    <p>I completed a project focused on developing a travel website using React.js for the frontend. The website offers a modern and user-friendly interface where users can explore various travel destinations, view detailed information about each destination, and make travel plans. The application features responsive design, allowing for an optimal user experience across different devices. Through this project, I gained valuable experience in React.js, component-based architecture, and the implementation of dynamic user interfaces.</p>
+                    <p>Developed a travel website using React.js, offering a modern interface for exploring destinations and making travel plans. Gained experience in React.js, component-based architecture, and dynamic user interfaces.</p>
                 </div>
                 <div class="project">
                     <h3>Spring Boot CRUD Application</h3>
-                    <p>In this project, I developed a CRUD application using Spring Boot, which demonstrates the fundamental operations of Create, Read, Update, and Delete. The application was designed to manage a simple database of user information. I implemented RESTful web services to handle HTTP requests and responses, ensuring a robust and scalable backend. This project helped me gain practical experience with Spring Boot, JPA (Java Persistence API) for database interactions, and the creation of RESTful APIs. Additionally, I used Postman to verify the correctness of the API endpoints.</p>
+                    <p>Created a CRUD application with Spring Boot to manage a user database, implementing RESTful web services for robust and scalable backend operations. Gained experience with Spring Boot, JPA, and RESTful APIs.</p>
                 </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>React.js</li>
+                    <li>Spring Boot</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML & CSS</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Email: janani@example.com</p>
+                <p>Phone: +1234567890</p>
             </div>
         </section>
     </main>
@@ -56,6 +77,21 @@
             </p>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const headerOffset = document.querySelector('header').offsetHeight;
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerOffset;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
