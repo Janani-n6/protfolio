@@ -28,6 +28,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
 section {
     padding: 2em;
     margin: 2em 0;
@@ -43,6 +47,10 @@ section {
     border: 1px solid #ddd;
     padding: 1em;
     margin: 1em 0;
+}
+
+.project:hover {
+    background-color: #f9f9f9; /* Change background color on hover */
 }
 
 footer {
