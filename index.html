@@ -5,59 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm Janani N, a B.Tech IT student.</p>
-    </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm currently studying at Sri Krishna College of Technology, pursuing a B.Tech in Information Technology. I'm in my second year, and I'm passionate about technology and software development. I have a keen interest in web development, data science, and cybersecurity. In my free time, I enjoy working on personal projects and expanding my knowledge in various programming languages and tools. I am eager to apply my skills and knowledge in real-world projects and am constantly seeking opportunities to learn and grow in the tech field.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Travel Website</h3>
-            <p>I completed a project focused on developing a travel website using React.js for the frontend. The website offers a modern and user-friendly interface where users can explore various travel destinations, view detailed information about each destination, and make travel plans. The application features responsive design, allowing for an optimal user experience across different devices. Through this project, I gained valuable experience in React.js, component-based architecture, and the implementation of dynamic user interfaces.</p>
-        </div>
-        <div class="project">
-            <h3>Spring Boot CRUD Application</h3>
-            <p>In this project, I developed a CRUD application using Spring Boot, which demonstrates the fundamental operations of Create, Read, Update, and Delete. The application was designed to manage a simple database of user information. I implemented RESTful web services to handle HTTP requests and responses, ensuring a robust and scalable backend. This project helped me gain practical experience with Spring Boot, JPA (Java Persistence API) for database interactions, and the creation of RESTful APIs. Additionally, I worked with an H2 in-memory database for testing purposes and used Postman to verify the correctness of the API endpoints.</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>I'm Janani N,</h2>
+                <h3>IT Student at Sri Krishna College of Technology</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project">
+                    <h3>Travel Website</h3>
+                    <p>I completed a project focused on developing a travel website using React.js for the frontend. The website offers a modern and user-friendly interface where users can explore various travel destinations, view detailed information about each destination, and make travel plans. The application features responsive design, allowing for an optimal user experience across different devices. Through this project, I gained valuable experience in React.js, component-based architecture, and the implementation of dynamic user interfaces.</p>
+                </div>
+                <div class="project">
+                    <h3>Spring Boot CRUD Application</h3>
+                    <p>In this project, I developed a CRUD application using Spring Boot, which demonstrates the fundamental operations of Create, Read, Update, and Delete. The application was designed to manage a simple database of user information. I implemented RESTful web services to handle HTTP requests and responses, ensuring a robust and scalable backend. This project helped me gain practical experience with Spring Boot, JPA (Java Persistence API) for database interactions, and the creation of RESTful APIs. Additionally, I used Postman to verify the correctness of the API endpoints.</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>Mail Id: 727822tuit065@skct.edu.in</p>
+        <div class="container">
+            <p>Connect with me: 
+                <a href="#"><i class="fab fa-twitter"></i></a> 
+                <a href="#"><i class="fab fa-linkedin"></i></a> 
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
